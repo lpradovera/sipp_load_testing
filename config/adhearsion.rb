@@ -65,5 +65,6 @@ Adhearsion.router do
   # Specify your call routes, directing calls with particular attributes to a controller
   #
 
-  route 'default', IvrController
+  route 'default', ActController
+  #route 'default', IvrController
 end
