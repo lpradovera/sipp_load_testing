@@ -1,0 +1,349 @@
+
+<--- SIP read from UDP:192.168.10.1:62862 --->
+PUBLISH sip:usera@192.168.10.11 SIP/2.0
+Via: SIP/2.0/UDP 192.168.0.6:62862;rport;branch=z9hG4bKPjJDpolf7qf9K5uRpdt6o8lafMh4Yj4itl
+Max-Forwards: 70
+From: "Luca Pradovera" <sip:usera@192.168.10.11>;tag=j6JZM03AGc43s3.WmBZq8.G3xP4ZeH7n
+To: "Luca Pradovera" <sip:usera@192.168.10.11>
+Call-ID: wQ0zqGzEzlLKJHW7zBfuPrrcspdMFBLM
+CSeq: 1 PUBLISH
+Event: presence
+Expires: 300
+User-Agent: Blink Pro 2.1.0 (MacOSX)
+Content-Type: application/pidf+xml
+Content-Length: 1904
+
+?xml version='1.0' encoding='UTF-8'?>
+<presence xmlns:c="urn:ietf:params:xml:ns:pidf:cipid" xmlns:dm="urn:ietf:params:xml:ns:pidf:data-model" xmlns:agp-caps="urn:ag-projects:xml:ns:pidf:caps" xmlns:caps="urn:ietf:params:xml:ns:pidf:caps" xmlns:rpid="urn:ietf:params:xml:ns:pidf:rpid" xmlns:agp-pidf="urn:ag-projects:xml:ns:pidf" xmlns="urn:ietf:params:xml:ns:pidf" entity="sip%3Ausera%40192.168.10.11"><tuple id="SID-0c8d1e76-3bb5-4462-9f3c-103e5197d5bd"><status><basic>open</basic><agp-pidf:extended>busy</agp-pidf:extended></status><c:display-name>Luca Pradovera</c:display-name><agp-pidf:device-info id="0c8d1e76-3bb5-4462-9f3c-103e5197d5bd"><agp-pidf:description>MacBook-Pro-di-Luca</agp-pidf:description><agp-pidf:user-agent>Blink Pro 2.1.0 (MacOSX)</agp-pidf:user-agent><agp-pidf:time-offset>60</agp-pidf:time-offset></agp-pidf:device-info><caps:servcaps><caps:audio>true</caps:audio><caps:message>true</caps:message><caps:text>true</caps:text><agp-caps:file-transfer>true</agp-caps:file-transfer><agp-caps:screen-sharing-server>true</agp-caps:screen-sharing-server><agp-caps:screen-sharing-client>true</agp-caps:screen-sharing-client></caps:servcaps><rpid:user-input idle-threshold="600">active</rpid:user-input><dm:deviceID>0c8d1e76-3bb5-4462-9f3c-103e5197d5bd</dm:deviceID><contact>sip%3Ausera%40192.168.10.11</contact><note>I am on the phone</note><timestamp>2013-02-23T10:09:00.031463+01:00</timestamp></tuple><dm:person id="PID-2397aade5554daab045b0139b2436b96"><rpid:time-offset>60</rpid:time-offset><rpid:activities><rpid:busy/></rpid:activities><dm:timestamp>2013-02-23T10:09:00.031463+01:00</dm:timestamp></dm:person><dm:device id="DID-0c8d1e76-3bb5-4462-9f3c-103e5197d5bd"><dm:deviceID>0c8d1e76-3bb5-4462-9f3c-103e5197d5bd</dm:deviceID><dm:note>Blink Pro 2.1.0 (MacOSX) at MacBook-Pro-di-Luca</dm:note><dm:timestamp>2013-02-23T10:09:00.031463+01:00</dm:timestamp></dm:device></presence>
+<------------->
+--- (12 headers 2 lines) ---
+
+<--- Transmitting (NAT) to 192.168.10.1:62862 --->
+SIP/2.0 489 Bad Event
+v: SIP/2.0/UDP 192.168.0.6:62862;branch=z9hG4bKPjJDpolf7qf9K5uRpdt6o8lafMh4Yj4itl;received=192.168.10.1;rport=62862
+f: "Luca Pradovera" <sip:usera@192.168.10.11>;tag=j6JZM03AGc43s3.WmBZq8.G3xP4ZeH7n
+t: "Luca Pradovera" <sip:usera@192.168.10.11>;tag=as082c0912
+i: wQ0zqGzEzlLKJHW7zBfuPrrcspdMFBLM
+CSeq: 1 PUBLISH
+Server: Asterisk with Adhearsion
+Allow: INVITE, ACK, CANCEL, OPTIONS, BYE, REFER, SUBSCRIBE, NOTIFY, INFO, PUBLISH
+k: replaces, timer
+l: 0
+
+
+<------------>
+Really destroying SIP dialog 'wQ0zqGzEzlLKJHW7zBfuPrrcspdMFBLM' Method: PUBLISH
+
+<--- SIP read from UDP:192.168.10.1:62862 --->
+INVITE sip:456@192.168.10.11 SIP/2.0
+Via: SIP/2.0/UDP 192.168.0.6:62862;rport;branch=z9hG4bKPjdZr0hZ5TXv25LoK34RRFTOoKcY0k3-J4
+Max-Forwards: 70
+From: "Luca Pradovera" <sip:usera@192.168.10.11>;tag=szE9mEMuAoUqsvOqLa.K9cvW1xGl6N0f
+To: <sip:456@192.168.10.11>
+Contact: <sip:31027458@192.168.10.1:62862>
+Call-ID: QFNEjRmIPSYIDjjrEeHnjq2jlMzGR7Lg
+CSeq: 7967 INVITE
+Allow: SUBSCRIBE, NOTIFY, PRACK, INVITE, ACK, BYE, CANCEL, UPDATE, MESSAGE, REFER
+Supported: 100rel, replaces, norefersub, gruu
+User-Agent: Blink Pro 2.1.0 (MacOSX)
+Content-Type: application/sdp
+Content-Length: 322
+
+v=0
+o=- 3570599340 3570599340 IN IP4 192.168.10.1
+s=Blink Pro 2.1.0 (MacOSX)
+c=IN IP4 192.168.10.1
+t=0 0
+m=audio 50022 RTP/AVP 103 102 0 8 101
+a=rtcp:50023
+a=rtpmap:103 speex/16000
+a=rtpmap:102 speex/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=sendrecv
+<------------->
+--- (13 headers 14 lines) ---
+Sending to 192.168.10.1:62862 (NAT)
+Using INVITE request as basis request - QFNEjRmIPSYIDjjrEeHnjq2jlMzGR7Lg
+Found peer 'usera' for 'usera' from 192.168.10.1:62862
+
+<--- Reliably Transmitting (NAT) to 192.168.10.1:62862 --->
+SIP/2.0 401 Unauthorized
+v: SIP/2.0/UDP 192.168.0.6:62862;branch=z9hG4bKPjdZr0hZ5TXv25LoK34RRFTOoKcY0k3-J4;received=192.168.10.1;rport=62862
+f: "Luca Pradovera" <sip:usera@192.168.10.11>;tag=szE9mEMuAoUqsvOqLa.K9cvW1xGl6N0f
+t: <sip:456@192.168.10.11>;tag=as75e7b3e9
+i: QFNEjRmIPSYIDjjrEeHnjq2jlMzGR7Lg
+CSeq: 7967 INVITE
+Server: Asterisk with Adhearsion
+Allow: INVITE, ACK, CANCEL, OPTIONS, BYE, REFER, SUBSCRIBE, NOTIFY, INFO, PUBLISH
+k: replaces, timer
+WWW-Authenticate: Digest algorithm=MD5, realm="asterisk", nonce="65c4616d"
+l: 0
+
+
+<------------>
+Scheduling destruction of SIP dialog 'QFNEjRmIPSYIDjjrEeHnjq2jlMzGR7Lg' in 32000 ms (Method: INVITE)
+
+<--- SIP read from UDP:192.168.10.1:62862 --->
+ACK sip:456@192.168.10.11 SIP/2.0
+Via: SIP/2.0/UDP 192.168.0.6:62862;rport;branch=z9hG4bKPjdZr0hZ5TXv25LoK34RRFTOoKcY0k3-J4
+Max-Forwards: 70
+From: "Luca Pradovera" <sip:usera@192.168.10.11>;tag=szE9mEMuAoUqsvOqLa.K9cvW1xGl6N0f
+To: <sip:456@192.168.10.11>;tag=as75e7b3e9
+Call-ID: QFNEjRmIPSYIDjjrEeHnjq2jlMzGR7Lg
+CSeq: 7967 ACK
+User-Agent: Blink Pro 2.1.0 (MacOSX)
+Content-Length: 0
+
+<------------->
+--- (9 headers 0 lines) ---
+
+<--- SIP read from UDP:192.168.10.1:62862 --->
+INVITE sip:456@192.168.10.11 SIP/2.0
+Via: SIP/2.0/UDP 192.168.0.6:62862;rport;branch=z9hG4bKPjIMHGqOPIBDPL.i5Jg6XJT4o2ZXtjZ7pq
+Max-Forwards: 70
+From: "Luca Pradovera" <sip:usera@192.168.10.11>;tag=szE9mEMuAoUqsvOqLa.K9cvW1xGl6N0f
+To: <sip:456@192.168.10.11>
+Contact: <sip:31027458@192.168.10.1:62862>
+Call-ID: QFNEjRmIPSYIDjjrEeHnjq2jlMzGR7Lg
+CSeq: 7968 INVITE
+Allow: SUBSCRIBE, NOTIFY, PRACK, INVITE, ACK, BYE, CANCEL, UPDATE, MESSAGE, REFER
+Supported: 100rel, replaces, norefersub, gruu
+User-Agent: Blink Pro 2.1.0 (MacOSX)
+Authorization: Digest username="usera", realm="asterisk", nonce="65c4616d", uri="sip:456@192.168.10.11", response="400039ed6cc57edf4035a0b21cad85c8", algorithm=MD5
+Content-Type: application/sdp
+Content-Length: 322
+
+v=0
+o=- 3570599340 3570599340 IN IP4 192.168.10.1
+s=Blink Pro 2.1.0 (MacOSX)
+c=IN IP4 192.168.10.1
+t=0 0
+m=audio 50022 RTP/AVP 103 102 0 8 101
+a=rtcp:50023
+a=rtpmap:103 speex/16000
+a=rtpmap:102 speex/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=sendrecv
+<------------->
+--- (14 headers 14 lines) ---
+Sending to 192.168.10.1:62862 (NAT)
+Using INVITE request as basis request - QFNEjRmIPSYIDjjrEeHnjq2jlMzGR7Lg
+Found peer 'usera' for 'usera' from 192.168.10.1:62862
+  == Using SIP RTP TOS bits 184
+  == Using SIP RTP CoS mark 5
+Found RTP audio format 103
+Found RTP audio format 102
+Found RTP audio format 0
+Found RTP audio format 8
+Found RTP audio format 101
+Found audio description format speex for ID 103
+Found audio description format speex for ID 102
+Found audio description format PCMU for ID 0
+Found audio description format PCMA for ID 8
+Found audio description format telephone-event for ID 101
+Capabilities: us - 0x606 (gsm|ulaw|speex|ilbc), peer - audio=0x20000020c (ulaw|alaw|speex|speex16)/video=0x0 (nothing)/text=0x0 (nothing), combined - 0x204 (ulaw|speex)
+Non-codec capabilities (dtmf): us - 0x1 (telephone-event|), peer - 0x1 (telephone-event|), combined - 0x1 (telephone-event|)
+Peer audio RTP is at port 192.168.10.1:50022
+Looking for 456 in adhearsion (domain 192.168.10.11)
+list_route: hop: <sip:31027458@192.168.10.1:62862>
+
+<--- Transmitting (NAT) to 192.168.10.1:62862 --->
+SIP/2.0 100 Trying
+v: SIP/2.0/UDP 192.168.0.6:62862;branch=z9hG4bKPjIMHGqOPIBDPL.i5Jg6XJT4o2ZXtjZ7pq;received=192.168.10.1;rport=62862
+f: "Luca Pradovera" <sip:usera@192.168.10.11>;tag=szE9mEMuAoUqsvOqLa.K9cvW1xGl6N0f
+t: <sip:456@192.168.10.11>
+i: QFNEjRmIPSYIDjjrEeHnjq2jlMzGR7Lg
+CSeq: 7968 INVITE
+Server: Asterisk with Adhearsion
+Allow: INVITE, ACK, CANCEL, OPTIONS, BYE, REFER, SUBSCRIBE, NOTIFY, INFO, PUBLISH
+k: replaces, timer
+m: <sip:456@192.168.10.11:5060>
+l: 0
+
+
+<------------>
+    -- Executing [456@adhearsion:1] AGI("SIP/usera-00000007", "agi:async") in new stack
+    -- AGI Script Executing Application: (RINGING) Options: ()
+
+<--- Transmitting (NAT) to 192.168.10.1:62862 --->
+SIP/2.0 180 Ringing
+v: SIP/2.0/UDP 192.168.0.6:62862;branch=z9hG4bKPjIMHGqOPIBDPL.i5Jg6XJT4o2ZXtjZ7pq;received=192.168.10.1;rport=62862
+f: "Luca Pradovera" <sip:usera@192.168.10.11>;tag=szE9mEMuAoUqsvOqLa.K9cvW1xGl6N0f
+t: <sip:456@192.168.10.11>;tag=as257994ca
+i: QFNEjRmIPSYIDjjrEeHnjq2jlMzGR7Lg
+CSeq: 7968 INVITE
+Server: Asterisk with Adhearsion
+Allow: INVITE, ACK, CANCEL, OPTIONS, BYE, REFER, SUBSCRIBE, NOTIFY, INFO, PUBLISH
+k: replaces, timer
+m: <sip:456@192.168.10.11:5060>
+l: 0
+
+
+<------------>
+Audio is at 15836
+Adding codec 0x4 (ulaw) to SDP
+Adding codec 0x200 (speex) to SDP
+Adding non-codec 0x1 (telephone-event) to SDP
+
+<--- Reliably Transmitting (NAT) to 192.168.10.1:62862 --->
+SIP/2.0 200 OK
+v: SIP/2.0/UDP 192.168.0.6:62862;branch=z9hG4bKPjIMHGqOPIBDPL.i5Jg6XJT4o2ZXtjZ7pq;received=192.168.10.1;rport=62862
+f: "Luca Pradovera" <sip:usera@192.168.10.11>;tag=szE9mEMuAoUqsvOqLa.K9cvW1xGl6N0f
+t: <sip:456@192.168.10.11>;tag=as257994ca
+i: QFNEjRmIPSYIDjjrEeHnjq2jlMzGR7Lg
+CSeq: 7968 INVITE
+Server: Asterisk with Adhearsion
+Allow: INVITE, ACK, CANCEL, OPTIONS, BYE, REFER, SUBSCRIBE, NOTIFY, INFO, PUBLISH
+k: replaces, timer
+m: <sip:456@192.168.10.11:5060>
+c: application/sdp
+l: 280
+
+v=0
+o=root 221994586 221994586 IN IP4 192.168.10.11
+s=Asterisk PBX 1.8.10.1~dfsg-1ubuntu1
+c=IN IP4 192.168.10.11
+t=0 0
+m=audio 15836 RTP/AVP 0 102 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:102 speex/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-16
+a=ptime:20
+a=sendrecv
+
+<------------>
+
+<--- SIP read from UDP:192.168.10.1:62862 --->
+ACK sip:456@192.168.10.11:5060 SIP/2.0
+Via: SIP/2.0/UDP 192.168.0.6:62862;rport;branch=z9hG4bKPjfkfBKNNryLtstiQb5e9X2JDRPKW5GaLe
+Max-Forwards: 70
+From: "Luca Pradovera" <sip:usera@192.168.10.11>;tag=szE9mEMuAoUqsvOqLa.K9cvW1xGl6N0f
+To: <sip:456@192.168.10.11>;tag=as257994ca
+Call-ID: QFNEjRmIPSYIDjjrEeHnjq2jlMzGR7Lg
+CSeq: 7968 ACK
+User-Agent: Blink Pro 2.1.0 (MacOSX)
+Content-Length: 0
+
+<------------->
+--- (9 headers 0 lines) ---
+    -- AGI Script Executing Application: (Playback) Options: (hello-world)
+    -- <SIP/usera-00000007> Playing 'hello-world.gsm' (language 'en')
+    -- AGI Script Executing Application: (Playback) Options: (tt-weasels)
+    -- <SIP/usera-00000007> Playing 'tt-weasels.gsm' (language 'en')
+    -- AGI Script Executing Application: (Playback) Options: (hello-world)
+    -- <SIP/usera-00000007> Playing 'hello-world.gsm' (language 'en')
+  == Spawn extension (adhearsion, 456, 1) exited non-zero on 'SIP/usera-00000007'
+    -- Executing [h@adhearsion:1] AGI("SIP/usera-00000007", "agi:async") in new stack
+  == Spawn extension (adhearsion, h, 1) exited non-zero on 'SIP/usera-00000007'
+Scheduling destruction of SIP dialog 'QFNEjRmIPSYIDjjrEeHnjq2jlMzGR7Lg' in 32000 ms (Method: ACK)
+set_destination: Parsing <sip:31027458@192.168.10.1:62862> for address/port to send to
+set_destination: set destination to 192.168.10.1:62862
+Reliably Transmitting (NAT) to 192.168.10.1:62862:
+BYE sip:31027458@192.168.10.1:62862 SIP/2.0
+v: SIP/2.0/UDP 192.168.10.11:5060;branch=z9hG4bK049c3af5;rport
+Max-Forwards: 70
+f: <sip:456@192.168.10.11>;tag=as257994ca
+t: "Luca Pradovera" <sip:usera@192.168.10.11>;tag=szE9mEMuAoUqsvOqLa.K9cvW1xGl6N0f
+i: QFNEjRmIPSYIDjjrEeHnjq2jlMzGR7Lg
+CSeq: 102 BYE
+User-Agent: Asterisk with Adhearsion
+Proxy-Authorization: Digest username="usera", realm="asterisk", algorithm=MD5, uri="sip:192.168.10.11", nonce="", response="8ea109e8c699bc9867cb6a1b1a464ddb"
+X-Asterisk-HangupCause: Normal Clearing
+X-Asterisk-HangupCauseCode: 16
+l: 0
+
+
+---
+
+<--- SIP read from UDP:192.168.10.1:62862 --->
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.10.11:5060;rport=5060;received=192.168.10.11;branch=z9hG4bK049c3af5
+Call-ID: QFNEjRmIPSYIDjjrEeHnjq2jlMzGR7Lg
+From: <sip:456@192.168.10.11>;tag=as257994ca
+To: "Luca Pradovera" <sip:usera@192.168.10.11>;tag=szE9mEMuAoUqsvOqLa.K9cvW1xGl6N0f
+CSeq: 102 BYE
+Server: Blink Pro 2.1.0 (MacOSX)
+Content-Length: 0
+
+<------------->
+--- (8 headers 0 lines) ---
+SIP Response message for INCOMING dialog BYE arrived
+Really destroying SIP dialog 'QFNEjRmIPSYIDjjrEeHnjq2jlMzGR7Lg' Method: ACK
+
+<--- SIP read from UDP:192.168.10.1:62862 --->
+PUBLISH sip:usera@192.168.10.11 SIP/2.0
+Via: SIP/2.0/UDP 192.168.0.6:62862;rport;branch=z9hG4bKPj3ZVX99QFMj1cBcQkKoxNBg4ogA6HlEzW
+Max-Forwards: 70
+From: "Luca Pradovera" <sip:usera@192.168.10.11>;tag=HFvCxxR5K7hyTHBE4thCFsvIAiNexRJU
+To: "Luca Pradovera" <sip:usera@192.168.10.11>
+Call-ID: slsRwMM6uwdRwq6LoUcRrQgVqdaHgKvV
+CSeq: 1 PUBLISH
+Event: presence
+Expires: 300
+User-Agent: Blink Pro 2.1.0 (MacOSX)
+Content-Type: application/pidf+xml
+Content-Length: 1914
+
+?xml version='1.0' encoding='UTF-8'?>
+<presence xmlns:c="urn:ietf:params:xml:ns:pidf:cipid" xmlns:dm="urn:ietf:params:xml:ns:pidf:data-model" xmlns:agp-caps="urn:ag-projects:xml:ns:pidf:caps" xmlns:caps="urn:ietf:params:xml:ns:pidf:caps" xmlns:rpid="urn:ietf:params:xml:ns:pidf:rpid" xmlns:agp-pidf="urn:ag-projects:xml:ns:pidf" xmlns="urn:ietf:params:xml:ns:pidf" entity="sip%3Ausera%40192.168.10.11"><tuple id="SID-0c8d1e76-3bb5-4462-9f3c-103e5197d5bd"><status><basic>open</basic><agp-pidf:extended>available</agp-pidf:extended></status><c:display-name>Luca Pradovera</c:display-name><agp-pidf:device-info id="0c8d1e76-3bb5-4462-9f3c-103e5197d5bd"><agp-pidf:description>MacBook-Pro-di-Luca</agp-pidf:description><agp-pidf:user-agent>Blink Pro 2.1.0 (MacOSX)</agp-pidf:user-agent><agp-pidf:time-offset>60</agp-pidf:time-offset></agp-pidf:device-info><caps:servcaps><caps:audio>true</caps:audio><caps:message>true</caps:message><caps:text>true</caps:text><agp-caps:file-transfer>true</agp-caps:file-transfer><agp-caps:screen-sharing-server>true</agp-caps:screen-sharing-server><agp-caps:screen-sharing-client>true</agp-caps:screen-sharing-client></caps:servcaps><rpid:user-input idle-threshold="600">active</rpid:user-input><dm:deviceID>0c8d1e76-3bb5-4462-9f3c-103e5197d5bd</dm:deviceID><contact>sip%3Ausera%40192.168.10.11</contact><note></note><timestamp>2013-02-23T10:09:11.999625+01:00</timestamp></tuple><dm:person id="PID-2397aade5554daab045b0139b2436b96"><rpid:time-offset>60</rpid:time-offset><rpid:activities><rpid:other>available</rpid:other></rpid:activities><dm:timestamp>2013-02-23T10:09:11.999625+01:00</dm:timestamp></dm:person><dm:device id="DID-0c8d1e76-3bb5-4462-9f3c-103e5197d5bd"><dm:deviceID>0c8d1e76-3bb5-4462-9f3c-103e5197d5bd</dm:deviceID><dm:note>Blink Pro 2.1.0 (MacOSX) at MacBook-Pro-di-Luca</dm:note><dm:timestamp>2013-02-23T10:09:11.999625+01:00</dm:timestamp></dm:device></presence>
+<------------->
+--- (12 headers 2 lines) ---
+
+<--- Transmitting (NAT) to 192.168.10.1:62862 --->
+SIP/2.0 489 Bad Event
+v: SIP/2.0/UDP 192.168.0.6:62862;branch=z9hG4bKPj3ZVX99QFMj1cBcQkKoxNBg4ogA6HlEzW;received=192.168.10.1;rport=62862
+f: "Luca Pradovera" <sip:usera@192.168.10.11>;tag=HFvCxxR5K7hyTHBE4thCFsvIAiNexRJU
+t: "Luca Pradovera" <sip:usera@192.168.10.11>;tag=as08655560
+i: slsRwMM6uwdRwq6LoUcRrQgVqdaHgKvV
+CSeq: 1 PUBLISH
+Server: Asterisk with Adhearsion
+Allow: INVITE, ACK, CANCEL, OPTIONS, BYE, REFER, SUBSCRIBE, NOTIFY, INFO, PUBLISH
+k: replaces, timer
+l: 0
+
+
+<------------>
+Really destroying SIP dialog 'slsRwMM6uwdRwq6LoUcRrQgVqdaHgKvV' Method: PUBLISH
+
+<--- SIP read from UDP:192.168.10.1:62862 --->
+SUBSCRIBE sip:usera@192.168.10.11 SIP/2.0
+Via: SIP/2.0/UDP 192.168.0.6:62862;rport;branch=z9hG4bKPjkCgxOD1EKOw9PdJSlYi-e8TyQP.c4jYg
+Max-Forwards: 70
+From: "Luca Pradovera" <sip:usera@192.168.10.11>;tag=PMWH8dhMEoCcOBBGgrDVLMhxGp.0UBzI
+To: <sip:usera@192.168.10.11>
+Contact: <sip:31027458@192.168.10.1:62862>
+Call-ID: aYWcos1gt8Tt8dbW9cN3JV.xqGlCQ0ny
+CSeq: 13008 SUBSCRIBE
+Event: message-summary
+Expires: 300
+Accept: application/simple-message-summary
+Allow-Events: conference, message-summary, dialog, presence, presence.winfo, xcap-diff, dialog.winfo, refer
+User-Agent: Blink Pro 2.1.0 (MacOSX)
+Content-Length: 0
+
+<------------->
+--- (14 headers 0 lines) ---
+
+<--- Transmitting (NAT) to 192.168.10.1:62862 --->
+SIP/2.0 403 Forbidden (policy)
+v: SIP/2.0/UDP 192.168.0.6:62862;branch=z9hG4bKPjkCgxOD1EKOw9PdJSlYi-e8TyQP.c4jYg;received=192.168.10.1;rport=62862
+f: "Luca Pradovera" <sip:usera@192.168.10.11>;tag=PMWH8dhMEoCcOBBGgrDVLMhxGp.0UBzI
+t: <sip:usera@192.168.10.11>;tag=as51b6c46a
+i: aYWcos1gt8Tt8dbW9cN3JV.xqGlCQ0ny
+CSeq: 13008 SUBSCRIBE
+Server: Asterisk with Adhearsion
+Allow: INVITE, ACK, CANCEL, OPTIONS, BYE, REFER, SUBSCRIBE, NOTIFY, INFO, PUBLISH
+k: replaces, timer
+l: 0
+
+
+<------------>
+Really destroying SIP dialog 'aYWcos1gt8Tt8dbW9cN3JV.xqGlCQ0ny' Method: SUBSCRIBE
+asterisk*CLI> 
