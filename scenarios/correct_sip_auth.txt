@@ -1,0 +1,88 @@
+<--- SIP read from UDP:192.168.10.1:62862 --->
+REGISTER sip:192.168.10.11 SIP/2.0
+Via: SIP/2.0/UDP 192.168.0.6:62862;rport;branch=z9hG4bKPjNSdV7NPoHVRjjO6RN-2TNKncDCRlvtB6
+Max-Forwards: 70
+From: "Luca Pradovera" <sip:usera@192.168.10.11>;tag=ADN7pn8rwne23NB.SYCPMEB8CQcbkCjT
+To: "Luca Pradovera" <sip:usera@192.168.10.11>
+Contact: <sip:31027458@192.168.10.1:62862>;+sip.instance="<urn:uuid:0c8d1e76-3bb5-4462-9f3c-103e5197d5bd>"
+Call-ID: 0ws4J0Ya8Lo3b5Qs4mEzAKxU.g2NMadL
+CSeq: 1 REGISTER
+Expires: 300
+Supported: gruu
+User-Agent: Blink Pro 2.1.0 (MacOSX)
+Content-Length: 0
+
+<------------->
+--- (12 headers 0 lines) ---
+Sending to 192.168.10.1:62862 (NAT)
+
+<--- Transmitting (NAT) to 192.168.10.1:62862 --->
+SIP/2.0 401 Unauthorized
+v: SIP/2.0/UDP 192.168.0.6:62862;branch=z9hG4bKPjNSdV7NPoHVRjjO6RN-2TNKncDCRlvtB6;received=192.168.10.1;rport=62862
+f: "Luca Pradovera" <sip:usera@192.168.10.11>;tag=ADN7pn8rwne23NB.SYCPMEB8CQcbkCjT
+t: "Luca Pradovera" <sip:usera@192.168.10.11>;tag=as370a21a1
+i: 0ws4J0Ya8Lo3b5Qs4mEzAKxU.g2NMadL
+CSeq: 1 REGISTER
+Server: Asterisk with Adhearsion
+Allow: INVITE, ACK, CANCEL, OPTIONS, BYE, REFER, SUBSCRIBE, NOTIFY, INFO, PUBLISH
+k: replaces, timer
+WWW-Authenticate: Digest algorithm=MD5, realm="asterisk", nonce="51030f4a"
+l: 0
+
+
+<------------>
+Scheduling destruction of SIP dialog '0ws4J0Ya8Lo3b5Qs4mEzAKxU.g2NMadL' in 32000 ms (Method: REGISTER)
+
+<--- SIP read from UDP:192.168.10.1:62862 --->
+REGISTER sip:192.168.10.11 SIP/2.0
+Via: SIP/2.0/UDP 192.168.0.6:62862;rport;branch=z9hG4bKPjC0P1LERnT0gT--rhuSmeDus2R01y4u3P
+Max-Forwards: 70
+From: "Luca Pradovera" <sip:usera@192.168.10.11>;tag=ADN7pn8rwne23NB.SYCPMEB8CQcbkCjT
+To: "Luca Pradovera" <sip:usera@192.168.10.11>
+Contact: <sip:31027458@192.168.10.1:62862>;+sip.instance="<urn:uuid:0c8d1e76-3bb5-4462-9f3c-103e5197d5bd>"
+Call-ID: 0ws4J0Ya8Lo3b5Qs4mEzAKxU.g2NMadL
+CSeq: 2 REGISTER
+Expires: 300
+Supported: gruu
+User-Agent: Blink Pro 2.1.0 (MacOSX)
+Authorization: Digest username="usera", realm="asterisk", nonce="51030f4a", uri="sip:192.168.10.11", response="49a3ed854db25ad45e115d18e8aa675b", algorithm=MD5
+Content-Length: 0
+
+<------------->
+--- (13 headers 0 lines) ---
+Sending to 192.168.10.1:62862 (NAT)
+    -- Registered SIP 'usera' at 192.168.10.1:62862
+    -- Added extension 'usera' priority 1 to sipregistrations
+
+<--- Transmitting (NAT) to 192.168.10.1:62862 --->
+SIP/2.0 200 OK
+v: SIP/2.0/UDP 192.168.0.6:62862;branch=z9hG4bKPjC0P1LERnT0gT--rhuSmeDus2R01y4u3P;received=192.168.10.1;rport=62862
+f: "Luca Pradovera" <sip:usera@192.168.10.11>;tag=ADN7pn8rwne23NB.SYCPMEB8CQcbkCjT
+t: "Luca Pradovera" <sip:usera@192.168.10.11>;tag=as370a21a1
+i: 0ws4J0Ya8Lo3b5Qs4mEzAKxU.g2NMadL
+CSeq: 2 REGISTER
+Server: Asterisk with Adhearsion
+Allow: INVITE, ACK, CANCEL, OPTIONS, BYE, REFER, SUBSCRIBE, NOTIFY, INFO, PUBLISH
+k: replaces, timer
+Expires: 300
+m: <sip:31027458@192.168.10.1:62862>;expires=300
+Date: Fri, 22 Feb 2013 23:31:18 GMT
+l: 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
