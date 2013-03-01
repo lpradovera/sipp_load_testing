@@ -293,15 +293,7 @@
       <exec play_pcap_audio="pcap/dtmf_2833_2.pcap"/>
     </action>
   </nop>
-
   <!-- Route to end of call with a DTMF9 -->
-  <pause milliseconds="4000"/>
-  <nop>
-    <action>
-      <exec play_pcap_audio="pcap/dtmf_2833_9.pcap"/>
-    </action>
-  </nop>
-
   <pause milliseconds="1000"/>
   <recv request="BYE">
   </recv>
