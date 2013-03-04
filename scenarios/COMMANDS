@@ -3,3 +3,7 @@ sudo sipp -i 192.168.10.1 -sf scenario1.xml -l 1 -m 1 -r 1 -s 456 -p 8832 192.16
 
 #ACT Test
 sudo sipp -i 192.168.19.90 -sf act_scenario.xml -l 1 -m 1 -r 1 -s 500 -p 8832 192.168.25.225
+
+#ACT IVR TEST
+sudo sipp -i 192.168.25.225 -sf act_final_bye.xml -l 1 -m 1 -r 1 -s 500 -p 8832 192.168.16.114
+sudo sipp -i 172.30.3.103 -sf act_final_bye.xml -l 1 -m 1 -r 1 -s 500 -p 8832 192.168.16.114
