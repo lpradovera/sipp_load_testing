@@ -86,7 +86,7 @@
   </send>
 
   <!-- Play a pre-recorded PCAP file (RTP stream)                       -->
-  <pause milliseconds="20000"/>
+  <pause milliseconds="18000"/>
   <!-- Carry on past welcome message -->
   <nop>
     <action>
@@ -94,7 +94,7 @@
     </action>
   </nop>
   <!-- Enter account number -->
-  <pause milliseconds="15000"/>
+  <pause milliseconds="8000"/>
   <nop>
     <action>
       <exec play_dyn_pcap_audio="pcap/dtmf_2833_5.pcap"/>
@@ -204,6 +204,7 @@
       <exec play_pcap_audio="pcap/dtmf_2833_4.pcap"/>
     </action>
   </nop>
+  <pause milliseconds="200"/>
   <nop>
     <action>
       <exec play_pcap_audio="pcap/dtmf_2833_7.pcap"/>
@@ -216,6 +217,12 @@
     </action>
   </nop>
   <!-- Route to end of call with a DTMF9 -->
+  <pause milliseconds="6000"/>
+  <nop>
+    <action>
+      <exec play_pcap_audio="pcap/dtmf_2833_9.pcap"/>
+    </action>
+  </nop>
   <pause milliseconds="1000"/>
   <send retrans="500">
     <![CDATA[
